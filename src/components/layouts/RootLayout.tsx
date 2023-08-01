@@ -1,4 +1,5 @@
 import styles from "@/styles/RootLayout.module.css";
+import { CaretDownOutlined } from "@ant-design/icons";
 import { Layout } from "antd";
 import Link from "next/link";
 import React, { ReactNode } from "react";
@@ -30,17 +31,17 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
               </li>
               {/* Dropdown category */}
               <li className={styles.navbarDropdown}>
-                <Link href="#" className="text-white">
-                  Categories
+                <Link href="/categories" className="text-white">
+                  Categories <CaretDownOutlined/>
                 </Link>
                 <div className={styles.dropdown}>
-                  <Link href="#">CPU / Processor</Link>
-                  <Link href="#">Motherboard</Link>
-                  <Link href="#">RAM</Link>
-                  <Link href="#">Power Supply Unit</Link>
-                  <Link href="#">Storage Device</Link>
-                  <Link href="#">Monitor</Link>
-                  <Link href="#">Others</Link>
+                  <Link href="/categories/cpu-processor">CPU / Processor</Link>
+                  <Link href="/categories/motherboard">Motherboard</Link>
+                  <Link href="/categories/ram">RAM</Link>
+                  <Link href="/categories/power-supply-unit">Power Supply Unit</Link>
+                  <Link href="/categories/storage-device">Storage Device</Link>
+                  <Link href="/categories/monitor">Monitor</Link>
+                  <Link href="/categories/others">Others</Link>
                 </div>
               </li>
             </ul>
@@ -49,13 +50,13 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
               href="#"
               className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
-              Build PC
+              PC Builder
             </Link>
               
 					</div>
 				</nav>
 			</Header>
-			<Content className="site-layout" style={{ padding: "0 50px" }}>
+			<Content style={{ padding: "0 50px", height:"100vh" }}>
 				<div style={{ padding: 24, minHeight: 380, background: "#fff" }}>
 					{children}
 				</div>
