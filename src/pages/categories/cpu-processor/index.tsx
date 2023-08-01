@@ -1,19 +1,11 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const CpuProcessor = () => {
+const CpuProcessorPage:NextPage = () => {
   return (
     <div>
-      welcome Cpu-processor      
+      Cpu-processor Home page
     </div>
   );
 };
 
-export default CpuProcessor;
-
-
-CpuProcessor.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default CpuProcessorPage;

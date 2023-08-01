@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import { NextPage } from 'next';
 
-const Home:NextPage = () => {
+const HomePage:NextPage = () => {
   return (
     <main>
       <h1>Hello Next!!!</h1>
@@ -10,5 +10,4 @@ const Home:NextPage = () => {
   )
 };
 
-export default Home;
-
+export default HomePage;

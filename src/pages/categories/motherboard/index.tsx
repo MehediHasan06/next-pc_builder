@@ -1,7 +1,6 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const Motherboard = () => {
+const MotherboardPage:NextPage = () => {
   return (
     <div>
       Welcome Motherboard
@@ -9,9 +8,4 @@ const Motherboard = () => {
   );
 };
 
-export default Motherboard;
-Motherboard.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default MotherboardPage;

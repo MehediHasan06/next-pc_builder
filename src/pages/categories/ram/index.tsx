@@ -1,7 +1,6 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const Ram = () => {
+const RamPage:NextPage = () => {
   return (
     <div>
       Ram
@@ -9,9 +8,4 @@ const Ram = () => {
   );
 };
 
-export default Ram;
-Ram.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default RamPage;

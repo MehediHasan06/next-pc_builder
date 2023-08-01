@@ -1,7 +1,6 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const PowerSupply = () => {
+const PowerSupplyPage:NextPage = () => {
   return (
     <div>
       PowerSupply
@@ -9,9 +8,4 @@ const PowerSupply = () => {
   );
 };
 
-export default PowerSupply;
-PowerSupply.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default PowerSupplyPage;

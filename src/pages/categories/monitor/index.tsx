@@ -1,7 +1,6 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const Monitor = () => {
+const MonitorPage:NextPage = () => {
   return (
     <div>
       Welcome Monitor
@@ -9,9 +8,4 @@ const Monitor = () => {
   );
 };
 
-export default Monitor;
-Monitor.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default MonitorPage;

@@ -1,7 +1,6 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const Others = () => {
+const OthersPage:NextPage = () => {
   return (
     <div>
       Others
@@ -9,9 +8,4 @@ const Others = () => {
   );
 };
 
-export default Others;
-Others.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default OthersPage;

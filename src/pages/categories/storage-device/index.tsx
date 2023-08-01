@@ -1,17 +1,11 @@
-import RootLayout from "@/components/layouts/RootLayout";
-import { ReactElement } from "react";
+import { NextPage } from "next";
 
-const StorageDevice = () => {
+const StorageDevicePage:NextPage = () => {
   return (
     <div>
-      StorageDevice
+      StorageDevice Page
     </div>
   );
 };
 
-export default StorageDevice;
-StorageDevice.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <RootLayout>{page}</RootLayout>
-  )
-};
+export default StorageDevicePage;

@@ -1,10 +1,11 @@
+import { NextPage } from "next";
 
-const Categories = () => {
+const CategoriesPage:NextPage = () => {
   return (
     <div>
-      Categories
+      Categories Home Page
     </div>
   );
 };
 
-export default Categories;
+export default CategoriesPage;
