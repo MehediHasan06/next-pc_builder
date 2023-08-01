@@ -1,11 +1,12 @@
 import ErrorImg from "@/assets/images/404_Error_Page.png";
 import { Button } from "antd";
+import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-const NotFoundPage = () => {
 
+const NotFoundPage:NextPage = () => {  
   const router = useRouter();
   setTimeout(()=>{
       router.push("/")
@@ -13,6 +14,7 @@ const NotFoundPage = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
+
       <Head>
         <title>PH-News-404 Not Found</title>
         <meta
@@ -22,6 +24,7 @@ const NotFoundPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <Image
         src={ErrorImg}
         width={700}
